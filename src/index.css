@@ -53,7 +53,7 @@ a:hover::after {
 html,
 body {
     color: whitesmoke;
-    background-image: url('public/img/background_image.jpg');
+    background-image: url('/img/background_image.jpg');
     background-size: cover;
     background-repeat: repeat-y;
     height: 100%;
