@@ -202,13 +202,12 @@ section {
 
     cursor: pointer;
     position: relative;
-
     height: 30%;
     border-radius: 1.2rem;
     background-color: ghostwhite;
     border: 4px solid grey;
     padding: 0;
-    margin: 2rem;
+
     overflow: hidden;
 
 }
@@ -254,4 +253,35 @@ section {
     padding: .5rem;
     color: white;
     z-index: 10;
+}
+
+
+@media only screen and (max-width: 600px) {
+    #section1 {
+        overflow: hidden;
+        grid-template-columns: 100%;
+        grid-template-rows: 40% 60%;
+    }
+
+    #section1>:nth-child(1) {
+        scale: 0.7;
+        padding: 0;
+    }
+
+    #section1>:nth-child(2) {
+        clip-path: polygon(20% 20%, 100% 0, 100% 100%, 0% 100%);
+        padding: 0;
+    }
+
+
+    #section2 #descriptionArea {
+        font-size: medium;
+    }
+
+    #section2 .chip {
+
+        font-size: medium;
+    }
+
+    #section3 .card {}
 }
